@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="bootstrap/bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap/bootstrap.min.js"></script>
                                                           
     <script src="menu.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -25,12 +27,12 @@
 		<span class="navbar-brand">Diákkönyvtár</span>
 	<div class="navbar-collapse collapse " id="menuid">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item"><a class="nav-link" href="">Főoldal</a></li>
-			<li class="nav-item"><a class="nav-link" href="">Könyvek</a></li>
-			<li class="nav-item"><a class="nav-link" href="">Kötelező olvasmányok</a></li>
-			<li class="nav-item"><a class="nav-link" href="">Kölcsönzések</a></li>
-			<li class="nav-item"><a class="nav-link" href="">Új könyv</a></li>
-			<li class="nav-item"><a class="nav-link" href="">Évfolyam módosítás</a></li>
+			<li class="nav-item"><a class="nav-link" href="index.php">Főoldal</a></li>
+			<li class="nav-item"><a class="nav-link" href="index.php?f=1">Könyvek</a></li>
+			<li class="nav-item"><a class="nav-link" href="index.php?f=2">Kötelező olvasmányok</a></li>
+			<li class="nav-item"><a class="nav-link" href="index.php?f=3">Kölcsönzések</a></li>
+			<li class="nav-item"><a class="nav-link" href="index.php?f=4">Új könyv</a></li>
+			<li class="nav-item"><a class="nav-link" href="index.php?f=5">Évfolyam módosítás</a></li>
 		</ul>
 	</div>
 </nav>  
@@ -38,7 +40,13 @@
 <main role="main" class="container p-2">
 	<div class="jumbotron">
 		<?php
-		echo "ide kell kerülön a tartalom";
+			if(isset($_GET['f'])){
+				$f=$_GET['f'];
+				include "feladat".$f.".php";
+			}
+			else{
+				include "fooldal.php";
+			}   
 		?>
     </div>
 </main>
