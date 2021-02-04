@@ -15,6 +15,10 @@
         min-height: 75rem;
         padding-top: 4.5rem;
         }
+
+		.opt{
+			color: blue;
+		}
     </style>
 
 </head>

@@ -14,9 +14,9 @@
 <div class="container border p-3">
 <div class="row shadow p-1 bg-light">
 	  <div class="col-md-12">
-		 <div class="table-responsive">
-		   <table class="table table-hover table-fixed-border" >
-			   <thead><tr><th scope="col"></th><th scope="col">Szerző</th><th scope="col">Cím</th><th scope="col">darabszám</th></tr></thead>
+		 <div class="table-responsive ">
+		   <table class="table table-hover table-fixed-border thead-dark" >
+			   <thead class="thead-dark"><tr><th scope="col"></th><th scope="col">Szerző</th><th scope="col">Cím</th><th scope="col">darabszám</th></tr></thead>
 			   <tbody ><?=$tbl?></tbody>
 		  </table>
 		</div>
