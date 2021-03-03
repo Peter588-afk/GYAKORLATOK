@@ -1,8 +1,5 @@
 <?php
         require_once 'config.php';
-        
-        
-
         $tbl="";
         $tbl2="";
         $sql="SELECT vnev,vid from versenyek ";
