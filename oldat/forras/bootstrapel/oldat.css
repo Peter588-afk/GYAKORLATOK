@@ -1,0 +1,22 @@
+.cim{
+    border-bottom: 5px dashed rgb(5, 78, 66);
+}
+
+body{
+    background-image: url("minta.jpg");
+    background-repeat: no-repeat;
+}
+
+ul{
+    list-style-image: url('lombik.png');
+}
+
+img{
+    border: 5px solid rgb(5, 78, 66);
+}
+
+<script src="bootstrap/jquery.min.js"></script>
+		<script src="bootstrap/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="oldat.css">
